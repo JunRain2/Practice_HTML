@@ -166,7 +166,98 @@
 
         </table>
         <hr>
-        
+        <!--멀티미디어 태그-->
+        <img src = "1636625536182-24.jpg" alt = "사진" width="200" border = "1"><br><!--src = 사진경로, 인터넷 주소도 가능.-->
+        <audio src="C:\Users\sad98\Downloads\야-옹1.mp3" controls autoplay></audio><br>
+        <video src = "C:\Users\sad98\OneDrive\사진\삼성 갤러리\DCIM\Camera\20180526_170702.mp4" controls autoplay width = "500"></video>\
+        <hr>
+        <!--공간분할 태그-->
+        <div style = "border : 1px solid black">Block</div><!--상자안이 모두 영역-->
+        <span style="background-color: aqua;">Inline</span><br><!--aqua색으로 칠해진 부분만 영역-->
+        <iframe src = 2.html name="iframe_a" width="400px" height="400px" title = "폰트"></iframe><!--웹페이지 내 새로운 웹페이지를 삽입할때 사용/src= 다른 페이지 삽입 가능-->
+        <p><a href ="http://www.suanlab.com" target="iframe_a">SuanLab.com</a></p><!--target을 통해 iframe 내에 웹페이지를 띄울 수 있음-->
+        <hr> 
+        <!--입력양식 태그-->
+        <form name="fname" action="sign.jsp", method="post"><!--action :form에 입력데이터를 받을 장소 get 보안에 취약 post 보안성 높음-->
+           <label for="name">이름</label><br><!--for에 name은 input의 id-->
+           <input type="text" id="name" name="name" value="Suan" size = 20><br>
+           <select id="food" name="food" multiple><!--multiple속성을 통해 다중선택 가능-->
+            <optgroup label="후식">
+                    <option value = "pizza" selected>피자</option><!--선택시 vlaue안에 데이터가 전송-->
+                    <option value = "hamburger" selected>햄버거</option>
+                    <option value = "pasta" selected>파스타</option>
+            </optgroup>
+                <optgroup label="후식"><!--optgroup를 통해 그룹지정 가능.-->
+                    <option value="cola">콜라</option>
+                    <option value="coffe">커피</option>
+                    <option value="icecream">아이스크림</option>
+                </optgroup>
+           </select><br>
+           <textarea name="article" row ="10" cols="20">텍스트</textarea><br><!--게시판과 같은 긴 텍스트에 사용-->
+           <button>Button</button><!--form에 action으로 이동.-->
+           <fieldset><!--fielset filed그룹 lengnd를 통해 그룹설명-->
+            <legend>개인정보</legend>
+            <label for ="name">이름 : </label><br>
+            <input type="text" id="name" name="name" value="suan"><br>
+            <label for="affiliation">소속: </label><br>
+            <input type = "text" id = "affiliation" name = "affilation" value= "SuanLab"><br><br>
+            <input type="submit" vlaue="전송"><!--summit을 통해 버튼 추가. form태그 for 속성값으로 이동-->
+           </fieldset>
+           <input list = "browsers"><!--input list의 browsers와 datalist id의 browsers를 연결 자동완성기능 처럼 사용가능-->
+           <datalist id = "browsers">
+            <option value="Crome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+           </datalist>
+        </form>
+
+        <form oninput="r.value=parseInt(x.value) * parseInt(y.value)">
+            <input type="number" id="x" name="x" value="10">
+            X
+            <input type="number" id="y" name="y" value="20">
+            =
+            <output name="r" for="x y"></output><!--계산된 결과를 출력-->
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+        <!--입력형식-->
+        <form>
+            <input type="text" name="text" size="20" placeholder="이름"><br><!--paceholder 희미하게 설명을 보여줌-->
+            <input type="password" name="password" placeholder="비밀번호" required><!--required는 반드시 입력하게하고 password속성을 통해 입력값이 가려짐-->
+            <input type="button" value="Button"><br>
+            <input type="radio" name="gender" value="male">남자<!--radio속성값을 통해 단일선택가능-->
+            <input type="radio" name="gender" value="female">여자<br>
+            <input type="checkbox" name = "food" value="pizza">피자<br><!--checkbox는 다중선택가능-->
+            <input type="checkbox" name = "food" value="hamburger">햄버거<br>
+            <input type="checkbox" name = "food" value="pasta">파스타<br>
+            <input type="date" name="date" min="2020-01-01" max="2020-12-31"><!--날짜 입력에 사용하기 때문에 범위를 지정해줘야함-->
+            <input type="month" id="month" name="month"><!--월과 년도를 입력할때 사용-->
+            <input type="week" id="week" name="week"><!--주를 입력할때 사용-->
+            <input type="time" id="time" name="time"><!--시간을 입력할때 사용-->
+            <input type="datetime-local" id="datetime" name="datetime"><!--시간과 날짜 전부선택-->
+            <input type="color" name="color"><br><!--색을 선택할 때 사용-->
+            <input type="number" name="num" min="0" max="1000"><br><!--숫자를 선택할때사용 범위지정-->
+            <input type="range" name="point" min="0" max="100"><br><!--범위를 바를 이용해 선택 범위지정-->
+            <input type="email" name="email"><br><!--email 형식이 맞는지 아닌지 확인-->
+            <input type="url" name="myurl"><br><!--url형식이 맞는지 확인 사실상 의미를 부여하는 느낌-->
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><!--전화번호와 같은 패턴 대로 입력해야만 입력 가능-->
+            <input type="file" id="myfile" name="myfile"><br><!--파일 선택 가능-->
+            <input type="submit" value="전송"><br><!--입력양식의 전송-->
+            <input type="reset" value="초기화"><!--입력양식의 초기화-->
+
+        </form>
 
     </body>
 </html>
+<!--class 속성 여러 태그들을 하나의 그룹으로 그룹핑 
+태그에 class="클래스명"으로 지정
+.클래스명으로 선택-->
+<!--id 속성 하나의 태그에 고유 id 부여
+태그에 id="고유id값"으로 지정
+#id값으로 선택-->
+<!--id 와 class속성을 통해 구분해서 선택가능-->
+<!--시맨틱요소 HTML5에서 추가된 내용 웹페이지의 해당 내용이 어떠한 내용을 가진지 머신이 이해할 수 있게 사용
+https://suanlab.notion.site/HTML-256b041d35654311849f1c348e19219d-->
