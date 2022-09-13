@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            회원가입
+        </title>
+    </head>
+    <h1>회원가입</h1>
+    <body>
+        <form>
+            <fieldset>
+                <legend>개인정보 입력</legend>
+                <center>
+                    <label for="name">이름</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <input type="radio" name="gender" value="male">남자
+                    <input type="radio" name="gender" value="female">여자<br>
+                    <label for="date">생년월일</label><br>
+                    <input type="date" id="date" min="1950-01-01" max="today"><br>
+                    <label for="phone1">전화번호</label><br>
+                    <select id="phone1" name="phone">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                    </select>-
+                    <input type="tel" id="phone2" name="phone2" size="4" pattenr="[0-9]{4}">-
+                    <input type="tel" id="phone3" name="phone3" size="4" pattenr="[0-9]{4}"><br>
+                    <label for="email">email</label><br>
+                    <input type="email"name="email">
+                </center>   
+            </fieldset>
+            <br>
+            <fieldset>
+               <legend>아이디 비밀번호 입력</legend>
+               <center>
+                    <label for="id">아이디</label><br>
+                    <input type="text" id="id" name="id">
+                    <input type="button" value="아이디 확인"><br>
+                    <label for ="password_1">비밀번호</label><br>
+                    <input type="password" name="password_!" required><br>
+                    <label for ="password_2">비밀번호 확인</label><br>
+                    <input type="password" name="password_2" required><br>
+                </center>
+            </fieldset>
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
+        </form>
+
+    </body>
+</html>
