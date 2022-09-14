@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            background-color: yellow;
+        }<!--지정한 태그 선택-->
+        #id1 {
+            color: yellow;
+            background-color: black;
+        }<!--아이디 선택자-->
+        .class1 {
+            color: blue;
+            background-color:yellow ;
+        }<!--class선택자-->
+        p.class1{
+            color: red;
+            background-color: navy;
+        }<!--p안에 class1이 있을경우-->
+        h1{
+            color: green;
+        }<!--지정한 태그 선택-->
+        h1[text]{
+            color: purple;
+        }<!--지정한 태그에 text속성이 있을경우-->
+        input[type="password"]{
+            background-color: yellow;
+        }<!--지정한 태그에 type="password"인 경우-->
+    </style>
+    <title>CSS연습</title>
+</head>
+<body>
+    <p>p</p>
+    <p id="id1">id1인 p</p>
+    <p class="class1">class1인 p</p>
+    <p class="class2">class2인 p</p>
+    <h1>h1</h1>
+    <h1 text="h1_text">text 속성 h1</h1>
+    <form>
+        <input type="password">
+    </form>
+</body>
+</html>
