@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS6</title>
+    <style>
+        /*테이블 스타일*/
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            height : auto;
+            text-align: left;
+        }
+        caption{
+            margin: 10px;
+            background-color: greenyellow;
+        }
+        table,th, td{
+            border-bottom: 1px solid green;
+        }/*table, th, td에 대한 공통 스타일*/
+        th, td{
+            padding: 10px 20px;
+        }/*th, td에 대한 공통 스타일*/
+        tr:hover{
+            background-color: greenyellow;
+        }
+        .right{
+            text-align: right;
+        }
+        /*가시 속성*/
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: skyblue;
+        }
+        .inline{
+            display: inline;/*연달아 한줄로 표시*/
+        }
+        .block{
+            display: block;/*다음줄로 넘어감*/
+        }
+        .inline-block{
+            display: inline-block;/*박스같은 것이 생김*/
+        }
+        .none{
+            display: none;/*존재하지 않는것 처럼 출력 X*/
+        }
+        .visible{
+            visibility: visible;
+        }
+        .hidden{
+            visibility: hidden;/*none은 없애지만 hidden은 감춘것*/
+        }
+        .half-transparent{
+            opacity: 0.5;/*투명도.*/
+        }
+        .opacity{
+            opacity: 0;
+        }
+        .opacity:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>영양 성분 표시</caption>
+        <tr>
+            <th>메뉴</th>
+            <th>열량(kcal)</th>
+            <th>단백질(g)</th>
+            <th>나트륨(mg)</th>
+            <th>당류(g)</th>
+            <th>포화지방(g)</th>
+        </tr>
+        <tr>
+            <td>치킨버거</td>
+            <td>527</td>
+            <td>20(36)</td>
+            <td>1123(56)</td>
+            <td>10</td>
+            <td>5(33)</td>
+        </tr>
+        <tr>
+            <td>불고기버거</td>
+            <td>390</td>
+            <td>17(31)</td>
+            <td>713(36)</td>
+            <td>8</td>
+            <td>7.4(49)</td>
+        </tr>
+        <tr>
+            <td>치즈버거</td>
+            <td>559</td>
+            <td>22(41)</td>
+            <td>681(38)</td>
+            <td>7</td>
+            <td>14.6(97)</td>
+        </tr>
+        <tr>
+            <td>새우버거</td>
+            <td>421</td>
+            <td>14(26)</td>
+            <td>685(34)</td>
+            <td>5</td>
+            <td>4(27)</td>
+        </tr>
+        <tr>
+            <td>와규버거</td>
+            <td>457</td>
+            <td>23(43)</td>
+            <td>658(33)</td>
+            <td>8</td>
+            <td>4.4(29)</td>
+        </tr>
+    </table>
+    <p class="right">( ) 안은 1일 영양성분 기준치에 대한 비율(%)</p>
+    <hr>
+    <hr>
+    <h1>display</h1>
+    <p class="inline">p inline #1</p>
+    <p class="inline">p inline #2</p>
+    <span class="block">span block #1</span>
+    <span class="block">span block #2</span>
+    <div class="inline-block">box1</div>
+    <div class="none">box2</div>
+    <div class="inline-block">box3</div>
+    <hr>
+    <h1>visibility</h1>
+    <div class="visible">visible</div>
+    <div class="hidden">hidden</div>
+    <div class="visible">visible</div>
+    <hr>
+    <h1>opacity</h1>
+    <div class="half-transparent">opacity: 0.5</div>
+    <div class="opacity">opacity: 0</div>
+</body>
+</html>

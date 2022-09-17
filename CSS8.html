@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS8</title>
+    <style>
+        /*overflow속성*/
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 30px;
+            border: 2px solid black;
+        }
+        .scroll{
+            overflow: scroll;
+        }/*설정값을 벗어나는 content를 스크롤로 볼 수있게함.*/
+        .hidden{
+            overflow: hidden;
+        }/*설정값을 벗더난 content를 없애버림*/
+        .overflow-xy{
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        /*float 속성*/
+        img{
+            margin: 5px;
+        }
+        .float-right{
+            float: right;
+        }/*사진이 오른쪽으로 쏠려 있고 여백에 글이 들어감*/
+        .float-left{
+            float: left;
+        }/*사진이 왼쪽으로 쏠려 있고 여백에 글이 들어감*/
+    </style>
+</head>
+<body>
+    <div class="scroll">
+        <img src="https://w.namu.la/s/43a07e65f573eb41fffe67ac0d1008fa73b5c7a04a004ff9004ddf0680524c5c5bd8a30c724fd7966bd7d3a2f60d0bd17c3cc159dd41f704f9b6dc188a21346d400068aa7de01a4cb44a4510f5cf3a3228d740bb4d6844da19c11bcd749a8b5b" width = "200px">
+        <p>
+            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            남산 위에 저 소나무, 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+    </div>
+    <div class="hidden">
+        <img class="float-left" src="https://w.namu.la/s/43a07e65f573eb41fffe67ac0d1008fa73b5c7a04a004ff9004ddf0680524c5c5bd8a30c724fd7966bd7d3a2f60d0bd17c3cc159dd41f704f9b6dc188a21346d400068aa7de01a4cb44a4510f5cf3a3228d740bb4d6844da19c11bcd749a8b5b" width = "200px">
+        <p>
+            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            남산 위에 저 소나무, 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+    </div>
+    <div class="overflow-xy">
+        <img class= "float-right" src="https://w.namu.la/s/43a07e65f573eb41fffe67ac0d1008fa73b5c7a04a004ff9004ddf0680524c5c5bd8a30c724fd7966bd7d3a2f60d0bd17c3cc159dd41f704f9b6dc188a21346d400068aa7de01a4cb44a4510f5cf3a3228d740bb4d6844da19c11bcd749a8b5b" width = "200px">
+        <p>
+            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            남산 위에 저 소나무, 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+        <p>
+            이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세.<br />
+            무궁화 삼천리 화려 강산 대한 사람, 대한으로 길이 보전하세.<br />
+        </p>
+    </div>
+</body>
+</html>

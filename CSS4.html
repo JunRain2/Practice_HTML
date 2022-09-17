@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS4</title>
+    <style>
+        /*박스 스타일*/
+        div{
+            background-color: orange;
+            width : 200px;
+            height : 200px;
+        }
+        p{
+            font-size: large;
+            font-weight: bold;
+            border:1px solid black;
+        }
+        div#box0 {
+            display: block;
+            margin: 40px;
+        }
+        div#box1{
+            margin:40px;
+            border: 5px solid black;
+        }
+        div#box2{
+            margin : 40px;
+            border:5px solid black;
+            padding :100px
+        }
+        div#box3{
+            margin:400px 100px 400px 100px;/*테두리와 최종경계 사이 여백*/
+            border: 5px solid black;/*테두리 두께*/
+            padding: 100px/*content와 테두리 사이의 공간*/
+        }
+        div#box4 {
+            margin: 40px;
+            border: 5px solid black;
+            padding : 400px 100px 400px 100px;/*top부터 시계바향으로 한번에 값을 줄 수 있음.*/
+        }
+        /*테두리 스타일*/
+    </style>
+</head>
+<body>
+    <div>
+        <p>div</p>
+    </div>
+    <div id="box0">
+        <p>div#box0</p>
+    </div>
+    <div id="box1">
+        <p>div#box1</p>
+        <p>margin: 40px</p>
+        <p>padding: 0</p>
+    </div>
+    <div id="box2">
+        <p>div#box2</p>
+        <p>margin: 40px</p>
+        <p>border: 5px solid black</p>
+        <p>padding: 30px</p>
+    </div>
+    <div id="box3">
+        <p>div#box3</p>
+        <p>margin: 400px 100px 400px 100px</p>
+        <p>border: 5px solid black</p>
+        <p>padding: 100px</p>
+    </div>
+    <div id="box4">
+        <p>div#box4</p>
+        <p>margin: 40px</p>
+        <p>border: 5px solid black</p>
+        <p>padding: 400px 100px 400px 100px</p>
+    </div>
+
+</body>
+</html>
